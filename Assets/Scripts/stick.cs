@@ -1,45 +1,41 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class stick : MonoBehaviour
+public class Stick : MonoBehaviour
 {
     private Rigidbody2D rb;
-   // public FloatingJoystick floatingJoystick;
-    // Start is called before the first frame update
-    void Start()
+
+    [SerializeField]
+    private float speed = 1;
+
+
+    private Vector3 direction;
+
+
+    private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        rb.mass = 10;    
     }
 
-    // Update is called once per frame
-    void Update()
+    public void DisableStick()
     {
-        
-        if (Input.GetKey(KeyCode.LeftArrow))
-        {
-            rb.AddForce(new Vector2(-20f,0),ForceMode2D.Impulse);
-           // transform.position -= Vector3.right * 0.20f;
-        }
-        if (Input.GetKey(KeyCode.RightArrow))
-        {
-            rb.AddForce(new Vector2(20f,0),ForceMode2D.Impulse);
-            //transform.position += Vector3.right * 0.20f;
-        }
-        if (Input.GetKey(KeyCode.UpArrow))
-        {
-            rb.AddForce(new Vector2(0,20f),ForceMode2D.Impulse);
-            //transform.position += Vector3.up * 0.20f;
-        }
-        if (Input.GetKey(KeyCode.DownArrow))
-        {
-            rb.AddForce(new Vector2(0,-20f),ForceMode2D.Impulse);
-            //transform.position -= Vector3.up * 0.20f;
-        }
-        
-       // Vector3 direction = Vector3.up * floatingJoystick.Vertical + Vector3.right * floatingJoystick.Horizontal;
+        Debug.Log("Disabling stick...");
+        // fade-out anim
+        gameObject.SetActive(false);
+    }
 
-       // rb.AddForce(direction * (Time.deltaTime * 500),ForceMode2D.Impulse);
+    public void Move(Touch touch)
+    {
+        float delX = touch.deltaPosition.x;
+        float delY = touch.deltaPosition.y;
+        // rb.MovePosition(transform.localPosition + new Vector3(delX, delY, 0) * touch.deltaPosition.magnitude * (speed * 0.01f) * Time.fixedDeltaTime);
+        rb.MovePosition(new Vector3(Camera.main.ScreenToWorldPoint(touch.position).x, Camera.main.ScreenToWorldPoint(touch.position).y, 0) * Time.fixedDeltaTime);
+    }
+
+    public void EnableStick(Touch touch)
+    {
+        Debug.Log("Enabling stick...");
+        gameObject.SetActive(true);
+        // fade-in anim
+        transform.position = new Vector3(Camera.main.ScreenToWorldPoint(touch.position).x, Camera.main.ScreenToWorldPoint(touch.position).y, 0);
     }
 }

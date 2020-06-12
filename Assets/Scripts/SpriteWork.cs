@@ -33,7 +33,7 @@ public class SpriteWork : MonoBehaviour
         }
         for (int i = 0; i < points.Length; i++)
         {
-            Debug.Log("points : ["+i+"] " + points[i]);
+            // Debug.Log("points : ["+i+"] " + points[i]);
             _spriteShapeController.spline.SetPosition(i,points[i]);
         }
 
