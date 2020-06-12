@@ -10,29 +10,18 @@ public class StickManager : MonoBehaviour
 
     void FixedUpdate()
     {
-        if(Input.touchCount == 1)
+        if(Input.touchCount > 0)
         {
             Touch touch = Input.GetTouch(0);
 
             if(touch.phase == TouchPhase.Began)
-            {
                 stick.EnableStick(touch);
-            }
 
             if(touch.phase == TouchPhase.Moved)
-            {
-                Debug.Log("move magni : " + touch.deltaPosition.magnitude);
+                stick.Move(touch);
 
-                // if(touch.deltaPosition.magnitude < maxSwipe)
-                if(true)
-                {
-                    stick.Move(touch); 
-                }
-                else
-                {
-                    stick.DisableStick();
-                }
-            }
+            if(touch.phase == TouchPhase.Ended)
+                stick.DisableStick();
         }
     }
 }

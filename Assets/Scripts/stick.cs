@@ -9,6 +9,8 @@ public class Stick : MonoBehaviour
 
 
     private Vector3 direction;
+    private Vector3 touchPosition;
+    private float moveSpeed = 20f;
 
 
     private void Start()
@@ -19,16 +21,17 @@ public class Stick : MonoBehaviour
     public void DisableStick()
     {
         Debug.Log("Disabling stick...");
+        rb.velocity = Vector2.zero;
         // fade-out anim
         gameObject.SetActive(false);
     }
 
     public void Move(Touch touch)
     {
-        float delX = touch.deltaPosition.x;
-        float delY = touch.deltaPosition.y;
-        // rb.MovePosition(transform.localPosition + new Vector3(delX, delY, 0) * touch.deltaPosition.magnitude * (speed * 0.01f) * Time.fixedDeltaTime);
-        rb.MovePosition(new Vector3(Camera.main.ScreenToWorldPoint(touch.position).x, Camera.main.ScreenToWorldPoint(touch.position).y, 0) * Time.fixedDeltaTime);
+        touchPosition = Camera.main.ScreenToWorldPoint(touch.position);
+        touchPosition.z = 0;
+        direction = (touchPosition - transform.position);
+        rb.velocity = new Vector2(direction.x, direction.y) * moveSpeed;
     }
 
     public void EnableStick(Touch touch)

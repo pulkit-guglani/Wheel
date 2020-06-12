@@ -70,7 +70,6 @@
     <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\FloatingJoystick.cs" />
     <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\VariableJoystick.cs" />
     <Compile Include="Assets\Scripts\Controller.cs" />
-    <Compile Include="Assets\Scripts\DragFingerMove.cs" />
     <Compile Include="Assets\Scripts\SpriteWork.cs" />
     <Compile Include="Assets\Scripts\Stick.cs" />
     <Compile Include="Assets\Scripts\StickManager.cs" />

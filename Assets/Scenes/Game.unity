@@ -160,7 +160,7 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 253777666}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &56752264
+--- !u!114 &56752263
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -169,9 +169,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 56752262}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8be09b9cfb932484a83ab2b21322ccfd, type: 3}
+  m_Script: {fileID: 11500000, guid: 6bb8f83d9c01a3144862852e130fb491, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 1
 --- !u!1 &68439141
 GameObject:
   m_ObjectHideFlags: 0
@@ -780,7 +781,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &353409830
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -793,7 +794,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1829485d27ac3a544b8403fb63974c95, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stick: {fileID: 0}
+  stick: {fileID: 56752263}
   maxSwipe: 10
 --- !u!4 &353409831
 Transform:
