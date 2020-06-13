@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 public class StickManager : MonoBehaviour
 {
@@ -15,13 +16,39 @@ public class StickManager : MonoBehaviour
             Touch touch = Input.GetTouch(0);
 
             if(touch.phase == TouchPhase.Began)
+            {
+                StartMeasuringDistance();
                 stick.EnableStick(touch);
+            }
 
             if(touch.phase == TouchPhase.Moved)
-                stick.Move(touch);
+            {
+                if(GetCurrentDistance() < maxSwipe)
+                {
+                    stick.Move(touch);
+                }
+                else
+                {
+                    stick.DisableStick();
+                }
+            }
 
             if(touch.phase == TouchPhase.Ended)
+            {
                 stick.DisableStick();
+            }
         }
+    }
+
+    // TODO : Pulkit
+    private float GetCurrentDistance()
+    {
+        throw new NotImplementedException();
+    }
+
+    // TODO : Pulkit
+    private void StartMeasuringDistance()
+    {
+        throw new NotImplementedException();
     }
 }
