@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 6743351686333400998}
   - component: {fileID: 6743351686333400999}
   - component: {fileID: 6743351686333400996}
-  - component: {fileID: 6743351686333400997}
   - component: {fileID: 6743351686333400993}
+  - component: {fileID: 1170098683299286309}
   m_Layer: 0
   m_Name: Stick
   m_TagString: Untagged
@@ -110,18 +110,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.5, y: 1}
   m_EdgeRadius: 0.09
---- !u!114 &6743351686333400997
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6743351686333401002}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35e3bb6e1d9546445a9f681717421857, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!50 &6743351686333400993
 Rigidbody2D:
   serializedVersion: 4
@@ -143,3 +131,15 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
+--- !u!114 &1170098683299286309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6743351686333401002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bb8f83d9c01a3144862852e130fb491, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

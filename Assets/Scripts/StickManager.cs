@@ -7,7 +7,9 @@ public class StickManager : MonoBehaviour
     private Stick stick;
 
     [SerializeField]
-    private float maxSwipe = 5;
+    private float maxSwipe = 10000;
+
+    private float distanceTravelled = 0;
 
     void FixedUpdate()
     {
@@ -17,13 +19,12 @@ public class StickManager : MonoBehaviour
 
             if(touch.phase == TouchPhase.Began)
             {
-                StartMeasuringDistance();
                 stick.EnableStick(touch);
             }
 
             if(touch.phase == TouchPhase.Moved)
             {
-                if(GetCurrentDistance() < maxSwipe)
+                if(GetCurrentDistance(touch.deltaPosition.magnitude) < maxSwipe)
                 {
                     stick.Move(touch);
                 }
@@ -36,19 +37,14 @@ public class StickManager : MonoBehaviour
             if(touch.phase == TouchPhase.Ended)
             {
                 stick.DisableStick();
+                distanceTravelled = 0;
             }
         }
     }
-
-    // TODO : Pulkit
-    private float GetCurrentDistance()
+    
+    private float GetCurrentDistance(float currentDistanceMoved)
     {
-        throw new NotImplementedException();
-    }
-
-    // TODO : Pulkit
-    private void StartMeasuringDistance()
-    {
-        throw new NotImplementedException();
+        distanceTravelled += currentDistanceMoved;
+        return distanceTravelled;
     }
 }

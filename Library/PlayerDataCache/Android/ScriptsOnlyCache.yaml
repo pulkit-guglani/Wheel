@@ -1,16 +1,15 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
-    - CollideAndDestroy
-    - Explodable
-    - ExplodableFragments
-    - ExplodeOnClick
-    - ExplosionForce
-    - FloatingJoystick
-    - Reset
-    - stick
+    - Controller
+    - SpriteWork
+    - Stick
+    - StickManager
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
+    Unity.2D.SpriteShape.Runtime.dll:
+    - UnityEngine.U2D.SpriteShape
+    - UnityEngine.U2D.SpriteShapeController
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridPaintingState
     - UnityEditor.Tilemaps.GridPaletteBrushes
@@ -48,19 +47,11 @@ ScriptsOnlyBuild:
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.RiderScriptEditorData
     - Packages.Rider.Editor.UnitTesting.CallbackData
-    UnityEditor.Graphs.dll:
-    - UnityEditor.Graphs.AnimationBlendTree.Graph
-    - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.Graph
-    - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
     - UnityEditor.TestTools.TestRunner.TestRun.TestJobDataHolder
     UnityEngine.UI.dll:
-    - UnityEngine.EventSystems.EventSystem
-    - UnityEngine.EventSystems.StandaloneInputModule
     - UnityEngine.UI.Button
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.ContentSizeFitter
@@ -75,7 +66,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Toggle
     - UnityEngine.UI.VerticalLayoutGroup
   sceneClasses:
-    Assets/2D_Destruction/Demo/Scenes/DemoScene.unity:
+    Assets/Scenes/Game.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -90,115 +81,105 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 50
       Script: {instanceID: 0}
-    - Class: 60
+    - Class: 58
       Script: {instanceID: 0}
     - Class: 61
+      Script: {instanceID: 0}
+    - Class: 62
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
-    - Class: 108
-      Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11300}
+      Script: {instanceID: 11314}
     - Class: 114
-      Script: {instanceID: 11446}
+      Script: {instanceID: 11458}
     - Class: 114
-      Script: {instanceID: 11594}
+      Script: {instanceID: 11606}
     - Class: 114
-      Script: {instanceID: 11622}
+      Script: {instanceID: 11634}
     - Class: 114
-      Script: {instanceID: 11750}
+      Script: {instanceID: 11762}
     - Class: 114
-      Script: {instanceID: 11756}
+      Script: {instanceID: 11768}
     - Class: 114
-      Script: {instanceID: 11794}
+      Script: {instanceID: 11854}
     - Class: 114
-      Script: {instanceID: 11844}
+      Script: {instanceID: 11900}
     - Class: 114
-      Script: {instanceID: 11910}
+      Script: {instanceID: 11920}
     - Class: 114
-      Script: {instanceID: 12082}
+      Script: {instanceID: 12090}
     - Class: 114
-      Script: {instanceID: 12116}
+      Script: {instanceID: 12124}
     - Class: 114
-      Script: {instanceID: 12572}
+      Script: {instanceID: 12574}
     - Class: 114
-      Script: {instanceID: 12670}
+      Script: {instanceID: 12674}
     - Class: 114
-      Script: {instanceID: 12832}
+      Script: {instanceID: 12856}
     - Class: 114
-      Script: {instanceID: 12980}
+      Script: {instanceID: 12978}
     - Class: 114
-      Script: {instanceID: 13258}
+      Script: {instanceID: 13256}
     - Class: 114
-      Script: {instanceID: 13308}
+      Script: {instanceID: 13306}
     - Class: 114
-      Script: {instanceID: 13390}
+      Script: {instanceID: 13388}
     - Class: 114
-      Script: {instanceID: 13536}
+      Script: {instanceID: 13422}
     - Class: 114
-      Script: {instanceID: 13620}
+      Script: {instanceID: 13532}
     - Class: 114
-      Script: {instanceID: 13910}
+      Script: {instanceID: 13896}
     - Class: 114
-      Script: {instanceID: 13944}
+      Script: {instanceID: 13930}
     - Class: 114
-      Script: {instanceID: 13964}
+      Script: {instanceID: 14096}
     - Class: 114
-      Script: {instanceID: 14112}
+      Script: {instanceID: 14292}
     - Class: 114
-      Script: {instanceID: 14306}
+      Script: {instanceID: 14378}
     - Class: 114
-      Script: {instanceID: 14346}
+      Script: {instanceID: 14402}
     - Class: 114
-      Script: {instanceID: 14394}
+      Script: {instanceID: 14558}
     - Class: 114
-      Script: {instanceID: 14418}
-    - Class: 114
-      Script: {instanceID: 14570}
+      Script: {instanceID: 14602}
     - Class: 114
       Script: {instanceID: 14614}
     - Class: 114
-      Script: {instanceID: 14626}
+      Script: {instanceID: 15002}
     - Class: 114
-      Script: {instanceID: 14746}
+      Script: {instanceID: 15022}
     - Class: 114
-      Script: {instanceID: 15016}
+      Script: {instanceID: 15094}
     - Class: 114
-      Script: {instanceID: 15036}
+      Script: {instanceID: 15120}
     - Class: 114
-      Script: {instanceID: 15106}
+      Script: {instanceID: 15294}
     - Class: 114
-      Script: {instanceID: 15422}
+      Script: {instanceID: 15334}
     - Class: 114
-      Script: {instanceID: 15666}
+      Script: {instanceID: 15410}
     - Class: 114
-      Script: {instanceID: 15720}
+      Script: {instanceID: 15650}
     - Class: 114
-      Script: {instanceID: 15766}
+      Script: {instanceID: 15704}
     - Class: 114
-      Script: {instanceID: 15976}
+      Script: {instanceID: 15958}
     - Class: 114
-      Script: {instanceID: 15980}
+      Script: {instanceID: 15962}
     - Class: 114
-      Script: {instanceID: 16024}
+      Script: {instanceID: 16034}
     - Class: 114
-      Script: {instanceID: 16050}
+      Script: {instanceID: 16036}
     - Class: 114
-      Script: {instanceID: 16052}
+      Script: {instanceID: 16180}
     - Class: 114
-      Script: {instanceID: 16198}
-    - Class: 114
-      Script: {instanceID: 16204}
-    - Class: 114
-      Script: {instanceID: 108650}
-    - Class: 114
-      Script: {instanceID: 220892}
+      Script: {instanceID: 16186}
     - Class: 115
-      Script: {instanceID: 0}
-    - Class: 124
       Script: {instanceID: 0}
     - Class: 128
       Script: {instanceID: 0}
@@ -216,7 +197,21 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 224
       Script: {instanceID: 0}
+    - Class: 231
+      Script: {instanceID: 0}
+    - Class: 232
+      Script: {instanceID: 0}
+    - Class: 233
+      Script: {instanceID: 0}
+    - Class: 1971053207
+      Script: {instanceID: 0}
   scriptHashData:
+  - hash:
+      serializedVersion: 2
+      Hash: ce669872a2be11bc686ea22961d8a3bb
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Joystick
   - hash:
       serializedVersion: 2
       Hash: 4bc4346a71a8df53a6b106f68ef3a190
@@ -315,12 +310,6 @@ ScriptsOnlyBuild:
     className: PostProcessData
   - hash:
       serializedVersion: 2
-      Hash: acc06744c043b25a21d478ad8dc98984
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: ExplosionForce
-  - hash:
-      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -403,6 +392,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
     className: PhysicsRaycaster
+  - hash:
+      serializedVersion: 2
+      Hash: 9e27f44bbf48228f203a37254d40f8ae
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: JoystickSetterExample
   - hash:
       serializedVersion: 2
       Hash: bd3cf68c8964d3c66d1c43f4f98508c9
@@ -561,6 +556,12 @@ ScriptsOnlyBuild:
     className: UniversalRenderPipelineAsset
   - hash:
       serializedVersion: 2
+      Hash: ce669872a2be11bc686ea22961d8a3bb
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: FloatingJoystick
+  - hash:
+      serializedVersion: 2
       Hash: 5e1eefcd5106de6c2e85908a3b2d3f04
     assemblyName: Unity.RenderPipelines.Core.Runtime.dll
     namespaceName: UnityEngine.Rendering.UI
@@ -613,12 +614,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.RenderPipelines.Core.Runtime.dll
     namespaceName: UnityEngine.Rendering.UI
     className: DebugUIHandlerToggleHistory
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: ExplodeOnClick
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -675,12 +670,6 @@ ScriptsOnlyBuild:
     className: ColorLookup
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: ExplodableFragments
-  - hash:
-      serializedVersion: 2
       Hash: 1f0602e7bad1e0a9cba31ce292eee8bb
     assemblyName: Unity.RenderPipelines.Core.Runtime.dll
     namespaceName: UnityEngine.Rendering.UI
@@ -729,12 +718,6 @@ ScriptsOnlyBuild:
     className: SignalReceiver
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Reset
-  - hash:
-      serializedVersion: 2
       Hash: 5ad4aa237d47ac2bab17bacb672edf7a
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -777,10 +760,22 @@ ScriptsOnlyBuild:
     className: Physics2DRaycaster
   - hash:
       serializedVersion: 2
+      Hash: 824e8d4cb47ffd88ddf959dbd4526585
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DynamicJoystick
+  - hash:
+      serializedVersion: 2
       Hash: a64b8ff703a69f3352c424e9d0bc1c49
     assemblyName: Unity.RenderPipelines.Core.Runtime.dll
     namespaceName: UnityEngine.Rendering
     className: VolumeComponent
+  - hash:
+      serializedVersion: 2
+      Hash: ce669872a2be11bc686ea22961d8a3bb
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: FixedJoystick
   - hash:
       serializedVersion: 2
       Hash: c1933cc0a2f4ff6eb13333347497beb3
@@ -837,12 +832,6 @@ ScriptsOnlyBuild:
     className: RenderObjects
   - hash:
       serializedVersion: 2
-      Hash: 1293042b5555039ae0c01213e035bcd4
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Explodable
-  - hash:
-      serializedVersion: 2
       Hash: 3b760e6526e13f7504f59e210145899a
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -873,6 +862,12 @@ ScriptsOnlyBuild:
     className: GraphicRaycaster
   - hash:
       serializedVersion: 2
+      Hash: 528e9858840cb8370d93939fff6b42d9
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: JoystickPlayerExample
+  - hash:
+      serializedVersion: 2
       Hash: 88cc9df3c6fc697bfbeacd24c0d6f2d7
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools
@@ -897,10 +892,22 @@ ScriptsOnlyBuild:
     className: CinemachineUniversalPixelPerfect
   - hash:
       serializedVersion: 2
+      Hash: afc5b93a7b192de2dcb3832fe35a5c7e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Stick
+  - hash:
+      serializedVersion: 2
       Hash: 36112b0a16753cab0931521e4de67ef6
     assemblyName: Unity.RenderPipelines.Universal.Runtime.dll
     namespaceName: UnityEngine.Rendering.Universal
     className: LiftGammaGain
+  - hash:
+      serializedVersion: 2
+      Hash: e8304cdd5e8cf8f160252b5aa3e54de2
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: StickManager
   - hash:
       serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
@@ -955,12 +962,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TextMeshPro
-  - hash:
-      serializedVersion: 2
-      Hash: d4687c9328b34232ddee0786130d2e0e
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: stick
   - hash:
       serializedVersion: 2
       Hash: 3165968ba45c74472d279ba04455fccb
@@ -1047,6 +1048,12 @@ ScriptsOnlyBuild:
     className: FreeCamera
   - hash:
       serializedVersion: 2
+      Hash: 9dac16f3efc511835ac976dfae55f580
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: VariableJoystick
+  - hash:
+      serializedVersion: 2
       Hash: 748dd2a2a28da4e618912da5ac45684b
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
@@ -1117,55 +1124,7 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: CollideAndDestroy
-  - hash:
-      serializedVersion: 2
-      Hash: ce669872a2be11bc686ea22961d8a3bb
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Joystick
-  - hash:
-      serializedVersion: 2
-      Hash: 9e27f44bbf48228f203a37254d40f8ae
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: JoystickSetterExample
-  - hash:
-      serializedVersion: 2
-      Hash: ce669872a2be11bc686ea22961d8a3bb
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: FloatingJoystick
-  - hash:
-      serializedVersion: 2
-      Hash: 824e8d4cb47ffd88ddf959dbd4526585
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: DynamicJoystick
-  - hash:
-      serializedVersion: 2
-      Hash: ce669872a2be11bc686ea22961d8a3bb
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: FixedJoystick
-  - hash:
-      serializedVersion: 2
-      Hash: 528e9858840cb8370d93939fff6b42d9
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: JoystickPlayerExample
-  - hash:
-      serializedVersion: 2
-      Hash: 9dac16f3efc511835ac976dfae55f580
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: VariableJoystick
   platform: 13
   scenePathNames:
-  - Assets/2D_Destruction/Demo/Scenes/DemoScene.unity
-  playerPath: E:/Unity Projects/Wheel/destroy2.apk
+  - Assets/Scenes/Game.unity
+  playerPath: E:/Unity Projects/Wheel/Wheel.apk
