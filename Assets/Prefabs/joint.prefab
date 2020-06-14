@@ -96,7 +96,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.4
+  m_Radius: 0.38
 --- !u!232 &1316784596395101211
 DistanceJoint2D:
   m_ObjectHideFlags: 0
@@ -135,7 +135,7 @@ SpringJoint2D:
   m_AutoConfigureDistance: 1
   m_Distance: 14.099887
   m_DampingRatio: 0.1
-  m_Frequency: 2
+  m_Frequency: 10
 --- !u!114 &1316784596395101209
 MonoBehaviour:
   m_ObjectHideFlags: 0

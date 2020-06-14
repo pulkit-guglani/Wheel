@@ -172,7 +172,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6bb8f83d9c01a3144862852e130fb491, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
 --- !u!1 &68439141
 GameObject:
   m_ObjectHideFlags: 0
@@ -258,7 +257,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 6a569b92fd415ad43bbe811c509ea690, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.49056602, g: 0.49056602, b: 0.49056602, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -794,7 +793,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1829485d27ac3a544b8403fb63974c95, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stick: {fileID: 56752263}
+  stick: {fileID: 0}
   maxSwipe: 10
 --- !u!4 &353409831
 Transform:
@@ -1135,7 +1134,7 @@ MonoBehaviour:
   m_SpriteShape: {fileID: 11400000, guid: 858498e7e0934dd44adbe01ef71071ef, type: 2}
   m_FillPixelPerUnit: 100
   m_StretchTiling: 1
-  m_SplineDetail: 8
+  m_SplineDetail: 16
   m_AdaptiveUV: 1
   m_StretchUV: 0
   m_WorldSpaceUV: 0
@@ -1190,18 +1189,18 @@ SpriteShapeRenderer:
   m_MaskInteraction: 0
   m_ShapeTexture: {fileID: 0}
   m_Sprites:
-  - {fileID: 21300000, guid: 6a569b92fd415ad43bbe811c509ea690, type: 3}
-  - {fileID: 21300000, guid: 6a569b92fd415ad43bbe811c509ea690, type: 3}
-  - {fileID: 21300000, guid: 6a569b92fd415ad43bbe811c509ea690, type: 3}
-  - {fileID: 21300000, guid: 6a569b92fd415ad43bbe811c509ea690, type: 3}
-  - {fileID: 21300000, guid: 6a569b92fd415ad43bbe811c509ea690, type: 3}
-  - {fileID: 21300000, guid: 6a569b92fd415ad43bbe811c509ea690, type: 3}
-  - {fileID: 21300000, guid: 6a569b92fd415ad43bbe811c509ea690, type: 3}
-  - {fileID: 21300000, guid: 6a569b92fd415ad43bbe811c509ea690, type: 3}
-  - {fileID: 21300000, guid: 6a569b92fd415ad43bbe811c509ea690, type: 3}
+  - {fileID: 21300000, guid: 2890f773cd5914a46a65fe0b2bfafb2e, type: 3}
+  - {fileID: 21300000, guid: 2890f773cd5914a46a65fe0b2bfafb2e, type: 3}
+  - {fileID: 21300000, guid: 2890f773cd5914a46a65fe0b2bfafb2e, type: 3}
+  - {fileID: 21300000, guid: 2890f773cd5914a46a65fe0b2bfafb2e, type: 3}
+  - {fileID: 21300000, guid: 2890f773cd5914a46a65fe0b2bfafb2e, type: 3}
+  - {fileID: 21300000, guid: 2890f773cd5914a46a65fe0b2bfafb2e, type: 3}
+  - {fileID: 21300000, guid: 2890f773cd5914a46a65fe0b2bfafb2e, type: 3}
+  - {fileID: 21300000, guid: 2890f773cd5914a46a65fe0b2bfafb2e, type: 3}
+  - {fileID: 21300000, guid: 2890f773cd5914a46a65fe0b2bfafb2e, type: 3}
   m_LocalAABB:
-    m_Center: {x: 2.2101648, y: 1.1071057, z: -0.0016}
-    m_Extent: {x: 4.726243, y: 3.3369184, z: 0.0016}
+    m_Center: {x: 2.381589, y: 1.0724261, z: -0.0016}
+    m_Extent: {x: 5.158991, y: 3.5970666, z: 0.0016}
 --- !u!4 &471696142
 Transform:
   m_ObjectHideFlags: 0
@@ -1267,7 +1266,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0.2026522, g: 0.20455581, b: 0.20754719, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -1661,7 +1660,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 6a569b92fd415ad43bbe811c509ea690, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.4716981, g: 0.4716981, b: 0.4716981, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1733,7 +1732,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 3.81
+  m_Radius: 3
 --- !u!50 &1097667735
 Rigidbody2D:
   serializedVersion: 4
@@ -3076,9 +3075,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 6a569b92fd415ad43bbe811c509ea690, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.47058827, g: 0.47058827, b: 0.47058827, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -3096,8 +3095,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1910325288}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 35.1, y: -5.2, z: -0.589507}
-  m_LocalScale: {x: 47.209175, y: 9.946584, z: 1}
+  m_LocalPosition: {x: 34.6114, y: -7.0998, z: -0.589507}
+  m_LocalScale: {x: 49.149555, y: 17.529047, z: 1}
   m_Children: []
   m_Father: {fileID: 9271784}
   m_RootOrder: 2
