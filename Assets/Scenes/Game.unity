@@ -788,7 +788,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stick: {fileID: 56752263}
-  maxSwipe: 10
+  maxSwipe: 700
 --- !u!4 &353409831
 Transform:
   m_ObjectHideFlags: 0
